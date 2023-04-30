@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>MVP</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Feira da APAE de Mogi das Cruzes</h2>
+        </div>
+        <div class="banner">
+            <img src="rsc/APAE_2.jpg">
+        </div>
+    </header>
+
+
+    <ul class="newsItemsUl">
+        <!-- Opções para adicionar um novo Artesão -->
+        <section class="newItemArtesao">
+            <input type="text" id="newArtesao" placeholder="Nome do Artesão:">
+            <input type="text" id="newBox" placeholder="Box:">
+            <input type="text" id="newCelular" placeholder="Celular:">
+            <span onclick="newArtesao()" class="addBtnArtesao">Adicionar</span>
+        </section>
+
+        <!-- Opções para adicionar um novo Artesão -->
+        <section class="newItemVenda">
+            <input type="text" id="BoxArtesao" placeholder="Box:">
+            <input type="text" id="newValor" placeholder="Valor:">
+            <input type="text" id="newPagamento" placeholder="Forma de Pagament:">
+            <span onclick="newVenda()" class="addBtnVenda">Adicionar</span>
+        </section>
+    </ul>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTableArtesao">
+            <tr>
+                <th>Box</th>
+                <th>Nome</th>
+                <th>Celular</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+        <table id="myTableVenda">
+            <tr>
+                <th>Box</th>
+                <th>Valor</th>
+                <th>Pagamento</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
